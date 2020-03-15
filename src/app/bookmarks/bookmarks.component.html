@@ -1,0 +1,11 @@
+<div class="card p-3">
+    <h4>Bookmarks</h4>
+    <p>{{ data.countBookmark }} item(s)</p>
+    <button type="button" class="btn btn-secondary" (click)="addItem()">Add actual video</button>
+    <ul class="list-group" *ngFor="let url of data.bookmark.slice().reverse()">
+        <li class="list-group-item">
+            {{ url }}
+            <a href="#" (click)="recoverItem(url)">See it</a>
+        </li>
+    </ul>
+</div>

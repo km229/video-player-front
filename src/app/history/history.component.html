@@ -1,0 +1,10 @@
+<div class="card p-3">
+    <h4>History</h4>
+    <p>{{data.countHistory}} item(s)</p>
+    <ul class="list-group" *ngFor="let url of data.history.slice().reverse()">
+        <li class="list-group-item">
+            {{ url }}
+            <a href="#" (click)="recoverUrl(url)">See it</a>
+        </li>
+    </ul>
+</div>

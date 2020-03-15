@@ -1,0 +1,9 @@
+<div class="card p-3">
+    <h4>Insert Youtube URL</h4>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Youtube URL" aria-label="url" aria-describedby="viewVideo" [(ngModel)]="urlVideo">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="viewVideo" (click)="send()">View</button>
+        </div>
+    </div>
+</div>
